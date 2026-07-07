@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>GPS Navigator</title>
+
+<meta name="theme-color" content="#1976d2">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="apple-touch-icon" href="icon-192.png">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📍 GPS Navigator</h1>
+
+<p class="subtitle">
+ใส่ Latitude และ Longitude เพื่อเปิดระบบนำทาง
+</p>
+
+<div class="card">
+
+<label>Latitude</label>
+
+<input
+type="number"
+id="lat"
+step="any"
+placeholder="เช่น 7.556842">
+
+<label>Longitude</label>
+
+<input
+type="number"
+id="lon"
+step="any"
+placeholder="เช่น 99.611245">
+
+<button id="navigateBtn">
+🚗 นำทาง
+</button>
+
+<div id="status"></div>
+
+</div>
+
+<footer>
+
+GPS Navigator<br>
+
+Offline PWA Version<br>
+
+Version 0.1 (สำหรับทดสอบ)
+
+</footer>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+window.addEventListener('load', () => {
+
+navigator.serviceWorker.register('sw.js');
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
