@@ -1,26 +1,39 @@
 {
-    "name": "GPS Navigator",
-    "short_name": "GPS GPS",
-    "description": "Offline GPS Navigator",
-    "start_url": "./",
-    "scope": "./",
-    "display": "standalone",
-    "orientation": "portrait",
-    "background_color": "#f5f7fa",
-    "theme_color": "#1976d2",
-    "lang": "th",
-    "icons": [
-        {
-            "src": "icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any"
-        },
-        {
-            "src": "icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "any"
-        }
-    ]
+  "name": "GPS Navigator V2 - ระบบงานภาคสนาม",
+  "short_name": "GPS Navigator",
+  "description": "ระบบจัดเก็บรายการงานและนำทาง GPS สำหรับเจ้าหน้าที่ภาคสนามขององค์กรปกครองส่วนท้องถิ่น",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f6f5",
+  "theme_color": "#1f6f63",
+  "lang": "th",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }
